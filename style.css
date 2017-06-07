@@ -1,0 +1,44 @@
+body{
+  background-image: url(main.jpg);
+  background-size: cover;
+  font-family: Arial;
+  width: 85%;
+  margin:auto;
+  background-position: 20 center;
+  height:75vh;
+  background-attachment: fixed;
+}
+/* navigation bar */
+ul {
+  margin: 0px;
+  padding: 2px;
+  list-style: none;}
+
+ul li{
+  float: left;
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  border-radius: 15px;
+  border: 3px;
+
+  opacity: .8;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  padding: 2px;
+  margin: 2px;}
+
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;}
+
+ul li a:hover{
+  background-color: green;}
+
+p{
+  font-size: 22px;
+  font-family: cursive;
+}
