@@ -2,10 +2,9 @@ body{
   background-image: url(main.jpg);
   background-size: cover;
   font-family: Arial;
-  width: 85%;
+  width: 800px;
   margin:auto;
-  background-position: 20 center;
-  height:75vh;
+  background-position: 30 center;
   background-attachment: fixed;
 }
 /* navigation bar */
