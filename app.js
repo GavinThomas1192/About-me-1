@@ -1,19 +1,22 @@
 'use strict';
 /* Question1*/
-var que1 = prompt('What is your name' );
-alert('Greetings ' + que1);
-console.log('User name is ' + que1);
+function callQuestionOne () {
+  var que1 = prompt('What is your name' );
+  alert('Greetings ' + que1);
+  console.log('User name is ' + que1);
+}
 
 /* Question2*/
-var que2 = confirm(que1 + ' Are you reday to learn more About Me');
-if (que2 == true) {
-  alert('Sweet!!! Lets Go' );
+function callQuestionTwo() {
+  var que2 = confirm(que1 + ' Are you reday to learn more About Me');
+  if (que2 == true) {
+    alert('Sweet!!! Lets Go');
+  }
+  if (que2 == false) {
+    alert('Come back when you are ready');
+  }
+  console.log(que1 + 'Said' + que2 + ' to the game');
 }
-if (que2 == false) {
-  alert('Come back when you are ready');
-}
-console.log(que1 + 'Said' + que2 + ' to the game');
-
 /*Question3*/
 var que3 = prompt( 'Guess if i like Cats or Dogs?').toUpperCase();
 if (que3 === 'DOGS') { alert('LOVE DOGS I have 2 of them');
