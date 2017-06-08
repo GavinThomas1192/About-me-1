@@ -1,24 +1,46 @@
 'use strict';
-
+/* Question1*/
 var que1 = prompt('What is your name' );
-alert('Welcome to my web  page ' + que1);
+alert('Greetings ' + que1);
 console.log('User name is ' + que1);
 
-var que2 = prompt(que1 + ' Are you reday to go on this journey').toUpperCase();
-if (que2 === 'YES') {
-  alert('Let"s start this journey' );
-} else {
+/* Question2*/
+var que2 = confirm(que1 + ' Are you reday to learn more About Me');
+if (que2 == true) {
+  alert('Sweet!!! Lets Go' );
+}
+if (que2 == false) {
   alert('Come back when you are ready');
 }
 console.log(que1 + 'Said' + que2 + ' to the game');
 
-var que3 = prompt( 'Lets get personal Do u think I am a dog or a cat person?').toUpperCase();
-if (que3 === 'DOG') { alert('Correct I love Dogs');
+/*Question3*/
+var que3 = prompt( 'Guess if i like Cats or Dogs?').toUpperCase();
+if (que3 === 'DOGS') { alert('LOVE DOGS I have 2 of them');
 }
-else { alert('I am Algeric to Cats' );}
-console.log(que1 + ' Thinks that i am a ' + que3 + 'person');
+else if(que3 == 'CATS') { alert ('Like Cats but not as much as Dogs');
+}
+else {alert('That was not the Question');
+}
+console.log(que1 + ' guessed i like ' + que3);
 
-var que4 = prompt('Can you Guess my Age');
-if (que4 > 31) { alert('You are too kind but I am 32 years Old');
+/*Question5*/
+var que5 = prompt('Can you Guess my Age');
+if (que5 > 31) { alert('You are too kind but I am 32 years Old');
 }
+else if (que5 = 32){alert('Very good Guess Yes i am 32 yrs old');}
 else { alert('Good guess but I am not that old');}
+console.log(que1 + ' Guessed my age ' + que5 + 'years but I am 32 years old');
+
+/*Question6*/
+var que6 = prompt('Did I Ever join The U.S.Militry').toUpperCase();
+if (que6 === 'YES'){alert('Yes i served in U.S.NAVY');}
+else {alert('Wrong I served in U.S.Navy');}
+
+/*Question7*/
+var que7 = prompt('Guess how many countrys i have been. U only have 3 trys');
+if (que7 === 12) {alert('Dam you are Good thats a right answer');}
+else if (que7 > 12) {alert('Guess again but lower');}
+else{alert('Guess again but higher');}
+
+/*Question8*/
