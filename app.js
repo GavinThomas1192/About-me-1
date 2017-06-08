@@ -43,4 +43,36 @@ if (que7 === 12) {alert('Dam you are Good thats a right answer');}
 else if (que7 > 12) {alert('Guess again but lower');}
 else{alert('Guess again but higher');}
 
-/*Question8*/
+/*Question8 guessing random number*/
+var randomNumber = Math.floor(Math.random() * 10 + 1);
+var guessesLeft = 4;
+while (guessesLeft > 0) {
+  var que8 = prompt('Guess a number between 1 and 10. You have 4 guesses.');
+  if (parseInt(que8) === randomNumber) {
+    alert('You are correct!');
+    guessesLeft = 0;
+  } else {
+    alert('Wrong! Try Again! You have ' + guessesLeft + ' guesses left.');
+    guessesLeft--;
+  }
+}
+console.log('The random numer was ' + randomNumber + '.');
+
+// Question9 guessing from an array
+var sportsIPlay = ['baseball', 'soccer', 'cricket'];
+var choicesLeft = 6;
+var isRight = false;
+while (choicesLeft > 0) {
+  var que9 = prompt('I play many sports. Can you guess just one? You have 7 guesses.');
+  for (var i = 0; i < sportsIPlay.length; i++) {
+    if (sportsIPlay[i] === que9.toLowerCase()) {
+      alert('Wow you guessed right!');
+      choicesLeft = -1;
+      isRight = true;
+    }
+  }
+  if (isRight === false) {
+    alert('Nope! Guess again, you have ' + choicesLeft + ' choices left.');
+    choicesLeft--;
+  }
+}
